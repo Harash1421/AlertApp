@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="doe-x7-5AM">
+                                <rect key="frame" x="64" y="169" width="300" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="hI3-L6-MAA"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="NrD-hg-FRs">
+                                <rect key="frame" x="64" y="251" width="300" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="da7-IL-0g6"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypn-9h-Fqr">
+                                <rect key="frame" x="70" y="84" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DRh-Gs-y45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwe-Lj-KRL">
+                                <rect key="frame" x="120" y="353" width="188" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Zmq-h5-0Tq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="gray" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="main_buSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9g-tY-dsG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zwe-Lj-KRL" firstAttribute="top" secondItem="NrD-hg-FRs" secondAttribute="bottom" constant="65" id="2jz-Wp-B7E"/>
+                            <constraint firstItem="NrD-hg-FRs" firstAttribute="centerX" secondItem="doe-x7-5AM" secondAttribute="centerX" id="4jg-HP-o3q"/>
+                            <constraint firstItem="doe-x7-5AM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="Fa8-iU-JyW"/>
+                            <constraint firstItem="Ypn-9h-Fqr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="I6S-wt-WVx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="doe-x7-5AM" secondAttribute="trailing" constant="64" id="JHo-jM-ubz"/>
+                            <constraint firstItem="doe-x7-5AM" firstAttribute="centerX" secondItem="Ypn-9h-Fqr" secondAttribute="centerX" id="MfQ-7K-dXR"/>
+                            <constraint firstItem="zwe-Lj-KRL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Onu-VE-zpv"/>
+                            <constraint firstItem="Ypn-9h-Fqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="QSm-ol-BhZ"/>
+                            <constraint firstItem="doe-x7-5AM" firstAttribute="top" secondItem="Ypn-9h-Fqr" secondAttribute="bottom" constant="40" id="SIf-PF-bQu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NrD-hg-FRs" secondAttribute="trailing" constant="64" id="Xm3-L9-eVx"/>
+                            <constraint firstItem="zwe-Lj-KRL" firstAttribute="centerX" secondItem="NrD-hg-FRs" secondAttribute="centerX" id="a81-2y-C99"/>
+                            <constraint firstItem="Ypn-9h-Fqr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="csr-dL-Bap"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zwe-Lj-KRL" secondAttribute="trailing" constant="120" id="dBv-m1-BX3"/>
+                            <constraint firstItem="NrD-hg-FRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="eDu-0z-OVa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ypn-9h-Fqr" secondAttribute="trailing" constant="70" id="uU5-Mb-buU"/>
+                            <constraint firstItem="NrD-hg-FRs" firstAttribute="top" secondItem="doe-x7-5AM" secondAttribute="bottom" constant="45" id="yK9-RK-whN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="main_edPassword" destination="NrD-hg-FRs" id="WHS-an-nVa"/>
+                        <outlet property="main_edUserName" destination="doe-x7-5AM" id="ILd-7a-gSu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
